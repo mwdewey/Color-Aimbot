@@ -40,11 +40,9 @@ public class ColorAimbot {
         keyImage = null;
         prevImage = null;
         BufferedImage newimg;
-        boolean imgDiff = false;
+        boolean imgDiff;
         while (true) {
             screenShotImage = robot.createScreenCapture(captureSize);
-            //imageBuffer.add(screenShotImage);
-            //if(imageBuffer.size() > bufferLimit) imageBuffer.remove(0);
 
             newimg = new BufferedImage(width,height,BufferedImage.TYPE_3BYTE_BGR);
             imgDiff = false;
